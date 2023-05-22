@@ -1,0 +1,42 @@
+
+public class Spielfeld {
+    private Spielkarte[] kartenFelder;
+
+    public Spielfeld() {
+        kartenFelder = new Spielkarte[16];
+        stapel s = new stapel();
+        s.shuffle();
+        Spielkarte[] karten = s.getKarten();
+
+        for (int i = 0; i < 16; i++) {
+            kartenFelder[i] = karten[i];
+        }
+        kartenFelder[0].umdrehen();
+        kartenFelder[4].umdrehen();
+        kartenFelder[8].umdrehen();
+        kartenFelder[12].umdrehen();
+
+    }
+
+    public void setKarte(int pos, Spielkarte karte) {
+        kartenFelder[pos] = karte;
+    }
+
+    public Spielkarte getKarte(int index) {
+        return kartenFelder[index];
+    }
+
+    // funktion gibt das Spielfeld als liste aus
+
+    public void printSpielfeld() {
+        for (int i = 0; i < kartenFelder.length; i++) {
+            Spielkarte karte = kartenFelder[i];
+            System.out.println(karte.getFarbe() + " " + karte.getWert() + " (ID: " + karte.getId() + ")");
+        }
+
+    }
+ public static void main(String[] args){
+
+    new Spielfeld();
+ }
+}

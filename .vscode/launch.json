@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "stapel",
+            "request": "launch",
+            "mainClass": "stapel",
+            "projectName": "Rikscha_45fcff3c"
+        },
+        {
+            "type": "java",
+            "name": "Spielfeld",
+            "request": "launch",
+            "mainClass": "Spielfeld",
+            "projectName": "Rikscha_45fcff3c"
+        },
+        {
+            "type": "java",
+            "name": "Spiel",
+            "request": "launch",
+            "mainClass": "Spiel",
+            "projectName": "Rikscha_45fcff3c"
+        },
+        {
+            "type": "java",
+            "name": "GUI",
+            "request": "launch",
+            "mainClass": "GUI",
+            "projectName": "Rikscha_45fcff3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Java Program",
+            "request": "launch",
+            "mainClass": "main"
+        }
+    ]
+}
